@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Trainning_JEE</display-name>
+<servlet>
+ <servlet-name>Servlet</servlet-name>
+ <servlet-class>web.form</servlet-class>
+ <multipart-config>
+ <location>C:/Users/obouazzaoui/Desktop/PG/tmp/</location>
+ <max-file-size>1209812</max-file-size>
+ <max-request-size>108353725</max-request-size>
+ <file-size-threshold>10987363</file-size-threshold>
+ </multipart-config>
+</servlet>
+<servlet-mapping>
+<servlet-name>Servlet</servlet-name>
+<url-pattern>/form</url-pattern>
+</servlet-mapping>
+
+<jsp-config>
+  <jsp-property-group>
+   <url-pattern>*.jsp</url-pattern>
+   <include-prelude>/WEB-INF/taglib.jsp</include-prelude>
+  </jsp-property-group>
+</jsp-config>
+</web-app>
