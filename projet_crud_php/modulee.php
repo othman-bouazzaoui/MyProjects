@@ -55,7 +55,7 @@ function Ajouter($cin,$nom,$prenom,$date_naiss,$img)
 				echo $e->getMessage();
 		}
 }
-//function Modifier($cin,$nom,$prenom,$date_naiss,$img)
+//function Modifier($cin,$nom,$prenom,$date_naiss,$img)//
 function Modifier($cin,$nom)
 {
 		try
